@@ -82,7 +82,7 @@ testpath==0.4.4
 threadpoolctl==2.1.0
 toml==0.10.2
 -f https://download.pytorch.org/whl/torch_stable.html 
-torch==0.9.0+cpu 
+torch==1.9.0+cpu 
 -f https://download.pytorch.org/whl/torch_stable.html
 torchvision==0.8.0+cpu
 torchaudio==0.9.0
