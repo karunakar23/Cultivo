@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+	<title>Cultivo</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">CULTIVO</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" href="/">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="crop-recomendation">Crop Prediciton</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="fertilizer-recomendation">Fertilizer Prediciton</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+				aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+				aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+				aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="static/1.jpg"  class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>India is a land of diversity not only culturally but also by soil profile and climate due to
+						this a variety of food and cash crops is grown.</h5>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="static/2.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>The best fertilizer for a piece of land is the footprints of the Farmer.</h5>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="static/3.jpg" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h5>Plant Diseases are Shifty Enemies</h5>
+				</div>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+			data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+			data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+	<br> </br>
+	<h6 style="font-size:60px; text-align: center;">Welcome to Cultivo</h6>
+	<img src="static/logo.png" class="rounded mx-auto d-block" alt="...">
+	<br> </br>
+	<h6 style="font-size:40px; text-align: center;">Our Services</h6>
+
+	<div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+		<div class="col d-flex align-items-start">
+			<div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+				<svg class="bi" width="1em" height="1em">
+					<use xlink:href="#toggles2"></use>
+				</svg>
+			</div>
+			<div>
+				<h2>Crop Prediction</h2>
+				<p>Recommendation about the type of crops to be cultivated which is the best suited for the respective
+					conditions</p>
+				<img src="static/i1.jpg" class="img-thumbnail" alt="..."><br>
+				<a href="crop-recomendation" class="btn btn-primary ">
+					Predict Crop
+				</a>
+			</div>
+		</div>
+		<div class="col d-flex align-items-start">
+			<div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+				<svg class="bi" width="1em" height="1em">
+					<use xlink:href="#cpu-fill"></use>
+				</svg>
+			</div>
+			<div>
+				<h2>Fertilizer Prediciton</h2>
+				<p>Recommendation about the type of fertiizer best suited for the particular soil and the recommended
+					Crop</p>
+				<img src="static/i2.jpg" class="img-thumbnail" alt="..."><br>
+				<a href="fertilizer-recomendation" class="btn btn-primary">
+					Predict Fertilizer
+				</a>
+			</div>
+		</div>
+		<div class="col d-flex align-items-start">
+			<div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+				<svg class="bi" width="1em" height="1em">
+					<use xlink:href="#tools"></use>
+				</svg>
+			</div>
+		<div>
+			<h2>Plant Disease Detection</h2>
+			<p>Recommendation about the type of fertiizer best suited for the particular soil and the recommended
+				Crop</p>
+			<img src="static/i3.jpg" class="img-thumbnail" alt="..."><br>
+			<a href="Plant-Disease" class="btn btn-primary">
+				Predict Diseases
+			</a>
+		</div>
+	</div>
+	</div>
+	<br> </br>
+	<br> </br>
+	<div class="card bg-dark text-white">
+		<img src="static/footer.jpg" class="card-img" class="img-fluid" alt="...">
+		<img src="static/footer.jpg" class="img-fluid" alt="...">
+		<div class="card-img-overlay">
+		  <h5 style="font-size:60px; text-align: center;" class="card-title">Cultivo</h5>
+		  <p style="font-size:20px; text-align: center;" class="card-text">An Environmental Intelligence StartUp</p>
+		  <p style="font-size:20px; text-align: center;" class="card-text">Made with ❤️ by Mutthi Karunakar</p>
+		  <p style="font: size 10px; text-align: center;" class="card-text">© Copyright 2021 Mutthi Karunakar</p>
+			<div align="center">
+    <ul>
+         <a href="https://github.com/karunakar23"> GitHub  </a>
+        <a href="https://twitter.com/MutthiK?s=08">  Twitter  </a>
+        <a href="https://www.linkedin.com/in/mutthi-karunakar-1358351b3">  Linkedin  </a>
+    </ul>
+
+</div>
+			</div>
+	  </div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
