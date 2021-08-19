@@ -18,7 +18,7 @@ crop_recommendation_model=pickle.load(open(crop_recommendation_path,'rb'))
 fert_recommendation_path='nfert-rfc.pkl'
 fert_recommendation_model=pickle.load(open(fert_recommendation_path,'rb'))
 
-disease_model_path="models/plant-disease-model.pth"
+disease_model_path="plant-disease-model.pth"
 disease_model=ResNet9(3,38)
 disease_model.load_state_dict(torch.load(disease_model_path,map_location=torch.device('cpu')))
 disease_model.eval()
