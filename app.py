@@ -13,8 +13,8 @@ from utils.model import ResNet9
 from utils.plant_disease import disease_dic
 from utils.fertilizer_dic import fertilizer_dic
 
-crop_recommendation_path='nrfc.pkl'
-crop_recommendation_model=pickle.load(open(crop_recommendation_path,'rb'))
+#crop_recommendation_path='nrfc.pkl'
+#crop_recommendation_model=pickle.load(open(crop_recommendation_path,'rb'))
 fert_recommendation_path='nfert-rfc.pkl'
 fert_recommendation_model=pickle.load(open(fert_recommendation_path,'rb'))
 
@@ -123,7 +123,7 @@ def crop_predicted():
         if weather(city)!=None:
             temp,hum=weather(city)
             data=np.array([[N,P,K,temp,hum,ph,rainfall]])
-            cpred=crop_recommendation_model.predict(data)
+            #cpred=crop_recommendation_model.predict(data)
             final_cpred=cpred[0]
             return render_template('crop-predicted.html',prediction=final_cpred)
         else:
