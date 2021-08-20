@@ -13,9 +13,9 @@ from utils.model import ResNet9
 from utils.plant_disease import disease_dic
 from utils.fertilizer_dic import fertilizer_dic
 
-#crop_recommendation_path='nrfc.pkl'
-#crop_recommendation_model=pickle.load(open(crop_recommendation_path,'rb'))
-fert_recommendation_path='fert-rfc.pkl'
+crop_recommendation_path='nrfc.pkl'
+crop_recommendation_model=pickle.load(open(crop_recommendation_path,'rb'))
+fert_recommendation_path='nfert-rfc.pkl'
 fert_recommendation_model=pickle.load(open(fert_recommendation_path,'rb'))
 
 disease_model_path="plant-disease-model.pth"
