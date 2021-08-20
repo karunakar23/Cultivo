@@ -12,7 +12,7 @@ from PIL import Image
 from utils.model import ResNet9
 from utils.plant_disease import disease_dic
 from utils.fertilizer_dic import fertilizer_dic
-
+app = Flask(__name__)
 crop_recommendation_path='nrfc.pkl'
 crop_recommendation_model=pickle.load(open('nrfc.pkl','rb'))
 fert_recommendation_path='fert-rfc.pkl'
@@ -97,8 +97,6 @@ def simple_fert(crop):
         else:
             l.append(0)
     return l
-
-app = Flask(__name__)
 @ app.route('/')
 def home():
     return render_template('index.html')
