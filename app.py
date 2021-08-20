@@ -121,7 +121,7 @@ def crop_predicted():
         if weather(city)!=None:
             temp,hum=weather(city)
             data=np.array([[N,P,K,temp,hum,ph,rainfall]])
-            #cpred=crop_recommendation_model.predict(data)
+            cpred=crop_recommendation_model.predict(data)
             final_cpred=cpred[0]
             return render_template('crop-predicted.html',prediction=final_cpred)
         else:
